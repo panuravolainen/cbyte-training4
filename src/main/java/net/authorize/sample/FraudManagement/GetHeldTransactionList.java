@@ -9,12 +9,12 @@ import net.authorize.api.controller.base.ApiOperationBase;
 
 //author @krgupta
 public class GetHeldTransactionList{
-	
+// IMPORTANT COMMENT!
+// fraud alert!
+HEPX	
 		public static ANetApiResponse run(String apiLoginId, String transactionKey) {
 			ApiOperationBase.setEnvironment(Environment.SANDBOX);
 
-	        MerchantAuthenticationType merchantAuthenticationType  = new MerchantAuthenticationType() ;
-	        merchantAuthenticationType.setName(apiLoginId);
 	        merchantAuthenticationType.setTransactionKey(transactionKey);
 	        ApiOperationBase.setMerchantAuthentication(merchantAuthenticationType);
 	
